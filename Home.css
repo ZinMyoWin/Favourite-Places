@@ -1,0 +1,119 @@
+/* This is the Background Color of the HOME Page*/
+body{
+    /* background-image: url('Place img/bgImg3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+  background-size: cover; */
+
+  background-color:#47B5FF ;
+}
+/* This is the Welcome Message CSS CODE*/
+.intro{
+    color: #fff;
+text-align: center;
+font-family: "Century Gothic";
+}
+/*This one is the Introduction Text Animation*/
+.Intro{
+    
+    height: 300px;
+    width: 500px;
+    margin: auto;
+}
+.text{
+    font-family: "SimSun";
+    font-size: 17px;
+    color: #FDF0E0;
+    margin-top: 60px;
+}
+.center{
+    text-align: center;
+}
+Img{    
+
+    border: 2px solid #778da9;
+    margin-top: 30px;
+    border-radius: 50px;
+    width: 600px;
+    height: 400px;
+}
+/* This one is the Grid CSS Code*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+/* THis is the Button Animation Code*/
+
+    /* .text-box {
+        margin-left: 44vw; 
+       margin-top: 42vh;
+    } */
+    
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: absolute;
+    }
+    
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    /* Button Color*/
+    .btn-white {
+        background-color: rgb(243, 235, 235);
+        color: #777;
+    }
+    
+    .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    .btn-white::after {
+        background-color: #fff;
+    }
+    
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+    
+    .btn-animated {
+        animation: moveInBottom 5s ease-out;
+        animation-fill-mode: backwards;
+    }
+    
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }

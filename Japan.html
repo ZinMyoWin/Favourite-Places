@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Japan</title>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  	/>
+
+	<link rel="stylesheet" href="Japan.css">
+</head>
+<body>
+
+<section class="section1">
+	<div class="welcome ">
+	<h1 class="animate__animated animate__bounce animate__repeat-2">Welcome To Japan</h1>
+	<img src="Japan Place/icon2.png">
+	<img src="Japan Place/icon3.png">
+	
+</div>
+</section>
+
+<section  class="section2 reveal">
+	<div class="grid-main ">
+	
+	<img class ="animate__animated animate__bounceInLeft"src="Japan Place/Fukuoka.jpg">
+	<div class="text 1">
+		<h6>
+			The ruins of the once-grand Fukuoka Castle (Fukuoka-jō), built in the early 1600s, punctuate the middle of Maizuru Park. The castle was once a fine example of the prolific and majestic hilltop homes preferred by Shoguns and city rulers. But it was destroyed after the Meiji Restoration as a backlash against the feudal system.
+		</h6>
+
+	</div>
+
+</div>
+</section>
+
+<section  class="section3 reveal">
+	<div class="grid-main">
+	
+	<div class="text 2">
+		<h6>
+			Daishi, also called Kukai, is one of the most important figures in Japan's Buddhist history. It is said that he sits in eternal meditation while waiting for the Buddha of the Future. Those who make the pilgrimage to his mausoleum do so to ask for salvation in this life.		
+		</h6>
+
+	</div>
+	<img src="Japan Place/Koyasan Okunoin.jpg">
+
+
+</div>
+</section>
+
+<section  class="section4 reveal">
+	<div class="grid-main">
+	
+	<img src="Japan Place/Miyajima.jpg">
+	<div class="text 3">
+		<h6>
+			Just a short ferry ride from mainland Hiroshima is the island of Miyajima, famous the world over as Japan's Shrine Island. Covering an area of 30 square kilometers in Hiroshima Bay, Miyajima is best known as the home of the Itsukushima Shrine, a Shinto temple dedicated to the Princess daughters of the wind god Susanoo.
+		</h6>
+
+	</div>
+
+</div>
+</section>
+
+
+<section  class="section5 reveal">
+	<div class="grid-main">
+	
+	<div class="text 4">
+		<h6>
+			Without a doubt Japan's most recognizable landmark, majestic Mount Fuji (Fuji-san) is also the country's highest mountain peak. Towering 3,776 meters over an otherwise largely flat landscape to the south and east, this majestic and fabled mountain is tall enough to be seen from Tokyo, more than 100 kilometers away.
+Mount Fuji has for centuries been celebrated in art and literature and is now considered so important an icon that UNESCO recognized its world cultural significance in 2013. Part of the Fuji-Hakone-Izu National Park, Mount Fuji is climbed by more than a million people each summer as an act of pilgrimage, which culminates in watching the sunrise from its summit.
+		
+		</h6>
+
+	</div>
+	<img src="Japan Place/Mount Fuji.jpg">
+
+</div>
+</section>
+
+<section  class="section6 reveal">
+	<div class="grid-main">
+	
+	<img src="Japan Place/Narita.jpg"> 
+	<div class="text 5">
+		<h6>
+			Dating back more than 1,000 years, the Naritasan Shinshoji Temple is one of the most popular Buddhist temples in Japan. The purpose for the temple was to protect and pay homage to a statue of the Buddhist god, Fudo Myoo, which is said to have been carved by Kobo Daishi. Within the temple grounds are several buildings, including several different style pagodas, a park, and the main halls.
+		</h6>
+
+	</div>
+
+</div>
+</section>
+
+<section  class="section7 reveal">
+	<div class="grid-main">
+	
+	<div class="text 6">
+		<h6>
+			Built in 1586 by famous Japanese warrior and politician Toyotomi Hideyoshi, Osaka Castle (Ōsaka-jō) was at the time the largest and most important fortress in the country. Although destroyed and rebuilt a number of times since, the present structure, built in 1931, remains true to the original.
+
+Highlights of a visit include the huge five-story, 42-meter-tall main tower. Built on an imposing 14-meter-tall stone base, the tower is home to a number of displays detailing the history of the castle and the city. Be sure to visit the top floor for its superb views over Osaka, an especially attractive sight as the sun sets.
+</h6>
+
+	</div>
+	<Img src="Japan Place/Osaka Castle.jpg"> 
+
+</div>
+</section>
+
+<section  class="section8 reveal">
+	<div class="grid-main">
+	
+	<img src="Japan Place/Temple City.jpg">
+	<div class="text 7">
+		<h6>
+			For centuries the hub of Japanese culture, the lovely unspoiled city of Nara is home to a large number of historic buildings, along with important national treasures and works of art.
+In addition to its many historic streets, the city boasts numerous important old temples. These includ the magnificent seventh-century Kofuku-ji Temple, perhaps the best known of the Seven Great Temples of Nara; and the splendid eighth-century Todai-ji (Great East Temple), famous for its huge bronze statue of the Great Buddha (Daibutsu), cast here in AD 749.
+		</h6>
+
+	</div>
+</div>
+</section>
+
+<script>
+	function reveal() {
+var reveals = document.querySelectorAll(".reveal");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+reveals[i].classList.add("active");
+} else {
+reveals[i].classList.remove("active");
+}
+}
+}
+
+window.addEventListener("scroll", reveal);
+  </script>
+
+
+
+	
+	
+	
+	
+</body>
+</html>
